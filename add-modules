@@ -1,0 +1,10 @@
+core:
+  media
+  media_library
+  responsive_image
+
+non-core:
+  entity_embed
+  inline_responsive_images
+  smtp
+  typekit_integration
