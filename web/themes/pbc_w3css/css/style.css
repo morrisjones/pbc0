@@ -64,6 +64,15 @@ div.callout-container {
 }
 
 /* end of special header blocks */
+/* Theme the page title for /node pages */
+#page-title {
+  background-color: inherit;
+}
+
+h1.page-title {
+  padding: 16px 0 !important;
+}
+
 /* Manage the main navigation row */
 .main-navigation-wrapper, .close-nav, .mobile-nav {
   background-color: #1e7ebe;
@@ -92,28 +101,28 @@ div.field__item {
   padding: 0;
 }
 
-#block-greeting {
+#block-frontpagegreeting {
   padding: 5px;
   margin: 0;
 }
-#block-greeting div {
+#block-frontpagegreeting div {
   padding: 0;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-#block-greeting div > p {
+#block-frontpagegreeting div > p {
   padding-left: 2em;
 }
-#block-greeting div > figure {
+#block-frontpagegreeting div > figure {
   width: 50%;
   float: right;
   margin-top: 0;
   margin-right: 0;
 }
-#block-greeting div > figure > img {
+#block-frontpagegreeting div > figure > img {
   width: 100%;
 }
-#block-greeting div > figure > figcaption {
+#block-frontpagegreeting div > figure > figcaption {
   font-size: 80%;
   font-style: italic;
 }
