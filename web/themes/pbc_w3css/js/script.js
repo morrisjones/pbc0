@@ -7,30 +7,36 @@
 
   'use strict';
 
-  Drupal.behaviors.customBehavior = {
+  Drupal.behaviors.pbcLeftSidebarExpand = {
       // Perform jQuery as normal in here.
     attach: function(context,settings) {
       // Show the mobile menu on click horizontal.
       $(context)
-        .find('#main-navigation-h .left-sidebar-nav')
-        .once('#main-navigation-h .left-sidebar-nav')
+        .find('#show-hide-left-sidebar')
+        .once('left-sidebar-more-less')
         .on(
           'click', function () {
+            let showHideLeftSidebar = document.getElementById('show-hide-left-sidebar');
             if ($('#left-sidebar').is(':hidden')) {
               document.getElementById('left-sidebar')
                 .setAttribute('style','display: block !important');
-              var shls = document.getElementById('show-hide-left-sidebar');
-              shls.className = shls.className.replace('left-sidebar-nav','left-sidebar-nav-displayed');
+              showHideLeftSidebar.className = showHideLeftSidebar.className
+                .replace('left-sidebar-nav','left-sidebar-nav-displayed');
             }
             else {
               document.getElementById('left-sidebar')
                 .setAttribute('style', 'display: none !important');
-              var shls = document.getElementById('show-hide-left-sidebar');
-              shls.className = shls.className.replace('left-sidebar-nav-displayed','left-sidebar-nav');
+              showHideLeftSidebar.className = showHideLeftSidebar.className
+                .replace('left-sidebar-nav-displayed','left-sidebar-nav');
             }
           }
         );
+    }
+  };
 
+  Drupal.behaviors.pbcExperimental = {
+    attach: function(context,settings) {
+      ;
     }
   };
 
