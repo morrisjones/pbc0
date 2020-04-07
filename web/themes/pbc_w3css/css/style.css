@@ -70,7 +70,7 @@ div.callout-container {
 }
 
 h1.page-title {
-  padding: 16px 0 !important;
+  padding: 16px 0;
 }
 
 /* Manage the main navigation row */
@@ -162,6 +162,11 @@ div#left-sidebar article.plug-article {
   border: #1e7ebe solid 3px;
 }
 
+@media only screen and (max-width: 600px) {
+  #left-sidebar {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
   .plug-container {
     padding: 0 8px;
